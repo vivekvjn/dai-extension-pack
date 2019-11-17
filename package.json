@@ -1,0 +1,20 @@
+{
+  "name": "dai-extension-pack",
+  "displayName": "DAI Extension Pack",
+  "description": "Extensions for DAI",
+  "version": "0.0.1",
+  "publisher": "vivekvijayan",
+  "author": {
+    "name": "Vivek Vijayan",
+    "email": "vivek.vijayan@dai.co.uk"
+  },
+  "engines": {
+    "vscode": "^1.40.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [
+    "vivekvijayan.dai-plugin"
+  ]
+}
