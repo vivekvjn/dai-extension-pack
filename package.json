@@ -15,6 +15,7 @@
     "Extension Packs"
   ],
   "extensionPack": [
-    "vivekvijayan.dai-plugin"
+    "vivekvijayan.dai-plugin",
+    "vivekvijayan.dai-theme"
   ]
 }
