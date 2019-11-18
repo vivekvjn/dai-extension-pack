@@ -2,12 +2,13 @@
   "name": "dai-extension-pack",
   "displayName": "DAI Extension Pack",
   "description": "Extensions for DAI",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "vivekvijayan",
   "author": {
     "name": "Vivek Vijayan",
     "email": "vivek.vijayan@dai.co.uk"
   },
+  "icon": "./icon.png",
   "repository": {
     "url": "https://github.com/vivekvjn/dai-extension-pack"
   },
