@@ -8,7 +8,7 @@
     "name": "Vivek Vijayan",
     "email": "vivek.vijayan@dai.co.uk"
   },
-  "icon": "./icon.png",
+  "icon": "icon.png",
   "repository": {
     "url": "https://github.com/vivekvjn/dai-extension-pack"
   },
