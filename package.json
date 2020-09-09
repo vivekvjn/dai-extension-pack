@@ -2,13 +2,13 @@
   "name": "dai-extension-pack",
   "displayName": "DAI Extension Pack",
   "description": "Extensions for DAI",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "vivekvijayan",
   "author": {
     "name": "Vivek Vijayan",
     "email": "vivek.vijayan@dai.co.uk"
   },
-  "icon": "./icon.png",
+  "icon": "icon.png",
   "repository": {
     "url": "https://github.com/vivekvjn/dai-extension-pack"
   },
@@ -21,5 +21,27 @@
   "extensionPack": [
     "vivekvijayan.dai-plugin",
     "vivekvijayan.dai-theme"
-  ]
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^11.0.0",
+    "husky": "^4.3.0",
+    "standard-version": "^9.0.0"
+  },
+  "scripts": {
+    "release": "standard-version"
+  },
+  "standard-version": {
+    "scripts": {
+      "prerelease": "git flow release start v`node get-next-version.js`"
+    },
+    "skip": {
+      "tag": true
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
 }
