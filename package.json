@@ -23,13 +23,14 @@
     "vivekvijayan.dai-theme"
   ],
   "devDependencies": {
-    "@commitlint/cli": "^9.1.2",
-    "@commitlint/config-conventional": "^11.0.0",
-    "husky": "^4.3.0",
-    "standard-version": "^9.0.0"
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "husky": "^7.0.2",
+    "standard-version": "^9.3.1"
   },
   "scripts": {
-    "release": "standard-version"
+    "release": "standard-version",
+    "prepare": "husky install"
   },
   "standard-version": {
     "scripts": {
@@ -37,11 +38,6 @@
     },
     "skip": {
       "tag": true
-    }
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }
 }
