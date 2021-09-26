@@ -1,8 +1,8 @@
 {
   "name": "dai-extension-pack",
-  "displayName": "DAI Extension Pack",
-  "description": "Extensions for DAI",
-  "version": "0.0.4",
+  "displayName": "DAI Matflo C Extension Pack",
+  "description": "Extensions for DAI Matflo C Development",
+  "version": "1.0.1",
   "publisher": "vivekvijayan",
   "author": {
     "name": "Vivek Vijayan",
@@ -13,23 +13,36 @@
     "url": "https://github.com/vivekvjn/dai-extension-pack"
   },
   "engines": {
-    "vscode": "^1.40.0"
+    "vscode": "^1.60.0"
   },
   "categories": [
     "Extension Packs"
   ],
   "extensionPack": [
     "vivekvijayan.dai-plugin",
-    "vivekvijayan.dai-theme"
+    "vivekvijayan.dai-theme",
+    "vivekvijayan.hg",
+    "ms-vscode.cpptools",
+    "cschlosser.doxdocgen",
+    "shardulm94.trailing-spaces",
+    "coenraads.bracket-pair-colorizer-2"
+  ],
+  "keywords": [
+    "matflo",
+    "Matflo C",
+    "DAI",
+    "Dematic",
+    "extension pack"
   ],
   "devDependencies": {
-    "@commitlint/cli": "^9.1.2",
-    "@commitlint/config-conventional": "^11.0.0",
-    "husky": "^4.3.0",
-    "standard-version": "^9.0.0"
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "husky": "^7.0.2",
+    "standard-version": "^9.3.1"
   },
   "scripts": {
-    "release": "standard-version"
+    "release": "standard-version",
+    "prepare": "husky install"
   },
   "standard-version": {
     "scripts": {
@@ -37,11 +50,6 @@
     },
     "skip": {
       "tag": true
-    }
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }
 }
